@@ -6,6 +6,6 @@ module.exports = {
   },
 
   login: function(req, res){
-    res.redirect('/')
+    res.redirect('/', {users: req.session.name})
   }
 }
